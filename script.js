@@ -47,8 +47,8 @@ function clicked() {
    }
 } 
 function reloadValues() {
-  let count = 0;
-  let totalPrice = 0;
+  count = 0;
+  totalPrice = 0;
   document.getElementById("total-price").innerText = "0.00";
   document.getElementById("discount-price").innerText = "0.00";
   document.getElementById("total").innerText = "0.00";
@@ -63,5 +63,4 @@ function reloadValues() {
 }
 document.getElementById("reset").addEventListener("click", function() {
    reloadValues();
-  
 });
