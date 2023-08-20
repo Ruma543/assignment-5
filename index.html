@@ -159,22 +159,23 @@
             </span>
           </div>
 
-          <div class="space-y-5  rounded-sm shadow-lg p-4">
-            <div id="product-container" class="border-b-2 border-gray-400 space-y-2 mb-4 py-3"></div>
-            <div class="border-b-2 border-gray-400">
+          <div class="space-y-5  rounded-sm shadow-lg px-4 relative py-7">
+            <div id="product-container" class="border-b-2 border-gray-400 space-y-2  py-3"></div>
+            <div class="border-b-2 border-gray-400 ">
               <h3 class="text-xl font-semibold">Total Price: <span id="total-price"
-                  class="text-xl font-normal">00.00</span><span class="font-normal">Tk</span>
+                  class="text-xl font-normal">0.00</span><span class="font-normal">Tk</span>
               </h3>
               <h3 class="text-xl font-semibold">Discount: <span id="discount-price"
-                  class="text-xl font-normal">00.00</span>
+                  class="text-xl font-normal">0.00</span>
                 <span class="font-normal">Tk</span>
               </h3>
-              <h3 class="text-xl font-semibold">Total: <span id="total" class="text-xl font-normal">00.00</span> <span
-                  class="font-normal">Tk</span></h3>
+              <h3 class="text-xl font-semibold">Total: <span id="total" class="text-xl font-normal mb-5">0.00</span>
+                <span class="font-normal">Tk</span>
+              </h3>
             </div>
             <button id="purchase-btn"
-              class="w-full text-white text-center py-2 my-5  bg-pink-500 rounded-lg disabled:opacity-10 " disabled
-              onclick="my_modal_1.showModal()">Make
+              class="w-4/5 mx-auto text-white text-center py-2 my-5  bg-pink-500 rounded-lg disabled:opacity-10 absolute -bottom-5 left-7 "
+              disabled onclick="my_modal_1.showModal()">Make
               Purchase</button>
             <dialog id="my_modal_1" class="modal p-7">
               <form method="dialog" class="modal-box">
@@ -182,7 +183,7 @@
                 <h3 class="font-bold text-xl text-center">Congratulations</h3>
                 <p class="py-4 text-center">Your Purchase the product</p>
                 <div class="modal-action">
-                  <button onclick="reloaded()"
+                  <button id="reset" onclick="reloadValues()"
                     class="btn w-3/5 mx-auto text-black text-center py-2 my-5  bg-pink-500 rounded-lg">Go
                     Home</button>
                 </div>
